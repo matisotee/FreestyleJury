@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.BattleActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textViewNumberRound"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:background="@color/colorPrimary"
+        android:textColor="#9E9E9E"
+        android:paddingTop="7dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:text="Round 1"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/textViewPatronesRestantes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:paddingTop="10dp"
+        android:textSize="25dp"
+        android:hint="40"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:src="@mipmap/ic_user"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="#9E9E9E"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/imageButtonMasUno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/imageButtonMasDos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/imageButtonMasTres"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/imageButtonMasCuatro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="7dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageButton
+            android:id="@+id/imageButtonMasCinco"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

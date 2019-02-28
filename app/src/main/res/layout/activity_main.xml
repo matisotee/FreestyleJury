@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="#212121"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".14"
+        android:background="@drawable/freestylers_tittle"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".88"
+        android:background="#161616">
+
+        <ListView
+            android:id="@+id/listViewPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#161616" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddPlayer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:src="@mipmap/ic_add"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/buttonBatallar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".11"
+        android:text="Batallar"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:background="#BF360C" />
+
+
+
+</LinearLayout>

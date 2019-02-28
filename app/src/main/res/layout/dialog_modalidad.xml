@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewRoundTitleRound"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:textAlignment="center"
+        android:textColor="#AAA"
+        android:hint="Round 1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".95"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRoundTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorAccent"
+                android:text="Tiempo"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewTiempo">
+
+            </ListView>
+
+            <!--<RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <RadioButton
+                    android:id="@+id/rButtonMinuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#AAA"
+                    android:text="1 Minuto"/>
+                <RadioButton
+                    android:id="@+id/rButtonCuarentaSeg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#AAA"
+                    android:text="40 Segundos"/>
+
+            </RadioGroup>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRoundModalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorAccent"
+                android:text="Modalidad"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewModalidad">
+
+            </ListView>
+
+            <!--<RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <RadioButton
+                    android:id="@+id/rButtonCuatroPorCuatro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#AAA"
+                    android:textStyle="bold"
+                    android:text="4x4"/>
+
+                <RadioButton
+                    android:id="@+id/rButtonOchoPorOcho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#AAA"
+                    android:textStyle="bold"
+                    android:text="8x8"/>
+                <RadioButton
+                    android:id="@+id/rButtonLibre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#AAA"
+                    android:text="Libre"/>
+
+
+            </RadioGroup>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
